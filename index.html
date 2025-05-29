@@ -1,0 +1,375 @@
+<!DOCTYPE html><html lang="en" class="scroll-smooth">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Malikah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+  <style>
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+       
+  @keyframes fade-up {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-up {
+    animation: fade-up 1s ease-out both;
+  }
+
+  @keyframes scale-in {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .scale-in {
+    animation: scale-in 1s ease-out both;
+  }
+
+  .delay-200 {
+    animation-delay: 0.2s;
+  }
+
+  .delay-400 {
+    animation-delay: 0.4s;
+  }
+
+@keyframes blob {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    transform: translate(30px, -20px) scale(1.1);
+  }
+}
+
+.animate-blob {
+  animation: blob 8s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+  
+</style>
+  
+</head>
+<body class="">
+    <!-- Navbar -->
+    <nav class="flex justify-center py-4 fixed top-0 left-0 w-full z-50">
+        <ul class="flex gap-6 bg-[#FFE4EC] px-6 py-2 rounded-full ">
+            <li><a href="#home" class="px-4 py-2 rounded-full text-[#CC627D] hover:text-[#7B272A] font-semibold transition">Home</a></li>
+            <li><a href="#about" class="px-4 py-2 rounded-full text-[#CC627D] hover:text-[#7B272A] font-semibold transition">About</a></li>
+            <li><a href="#portofolio" class="px-4 py-2 rounded-full text-[#CC627D] hover:text-[#7B272A] font-semibold transition">Portfolio</a></li>
+            <li><a href="#contact" class="px-4 py-2 rounded-full text-[#CC627D] hover:text-[#7B272A] font-semibold transition">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+<section id="home" class="relative overflow-hidden bg-gradient-to-b from-[#FF9A9E] to-[#FAD0C4] flex flex-col md:flex-row items-center justify-center text-center md:text-left px-6 md:px-20 min-h-screen">
+    <div class="absolute w-72 h-72 bg-pink-200 rounded-full mix-blend-multiply filter blur-2xl opacity-50 animate-blob -top-10 -left-10 z-0"></div>
+    <div class="absolute w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-2xl opacity-50 animate-blob animation-delay-2000 top-20 left-1/2 z-0"></div>
+    <div class="absolute w-72 h-72 bg-pink-400 rounded-full mix-blend-multiply filter blur-2xl opacity-50 animate-blob animation-delay-4000 -bottom-10 -right-10 z-0"></div>
+
+    <img src="foto/2-removebg-preview.png" alt="profile" class="w-40 md:w-60 rounded-full shadow-lg mb-6 md:mb-0 " data-aos="fade-right" data-aos-duration="1200" >
+    <div class="md:ml-12" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200" >
+        <h1 class="text-3xl md:text-4xl font-bold text-[#5A3D55] mb-2">Hi there, welcome!</h1>
+        <p class="text-[#4A4A4A] max-w-md">I'm Malikah Alfa Salsabila, a passionate Web Developer based in Salatiga. I love turning ideas into clean, user-friendly, and meaningful digital experiences.</p>
+        <p class="text-gray-700 mt-2">Let’s explore my work together.</p>
+        <p class="text-sm text-[#7b5976] mt-2 italic">Specialized in Frontend Development · UI/UX Enthusiast · Responsive Design</p>
+
+    </div>
+    
+</section>
+
+<!-- About -->
+<section id="about" class=" px-6 md:px-20 bg-gradient-to-bl from-[#FF9A9E] to-[#FAD0C4] pt-10 pb-16">
+  <div class="bg-white rounded-3xl shadow-md p-8 flex flex-col items-center max-w-4xl mx-auto scale-in">
+
+    <h2 class="text-3xl font-bold text-[#4E3C4C] mb-6 text-center fade-up delay-200">
+      ABOUT ME
+    </h2>
+
+    <div class="flex flex-col md:flex-row items-center gap-8">
+      <div class="flex-1 fade-up delay-400">
+        <p class="text-gray-700 text-justify leading-relaxed">
+          I'm Malikah Alfa Salsabila, a <strong>Web Developer</strong> based in <strong>Salatiga, Indonesia</strong>, with a degree in <strong>RPL from SMKN TENGARAN</strong>. I'm available for freelance work and fluent in Indonesian and English.
+        </p>
+      </div>
+
+      <img src="foto/about-removebg-preview.png" alt="komputer"
+           class="w-full max-w-[200px] object-contain fade-up delay-400">
+    </div>
+
+  </div>
+</section>
+
+<!-- Skill Progress Bar Section -->
+<section class="bg-[#ffe4e6] py-10 px-6 md:px-20 shadow-inner">
+    <div class="max-w-4xl mx-auto" data-aos="fade-up" data-aos-duration="1000">
+        <h2 class="text-2xl font-bold text-center text-pink-400 mb-8">Skill Progress</h2>
+
+        <div class="space-y-6">
+            <div data-aos="fade-right" data-aos-delay="100">
+                <p class="text-sm font-semibold text-gray-800 mb-1">HTML & CSS</p>
+                <div class="w-full bg-gray-300 rounded-full h-3">
+                    <div class="bg-pink-400 h-3 rounded-full transition-all duration-700" style="width: 90%"></div>
+                </div>
+            </div>
+
+            <div data-aos="fade-right" data-aos-delay="200">
+                <p class="text-sm font-semibold text-gray-800 mb-1">JavaScript</p>
+                <div class="w-full bg-gray-300 rounded-full h-3">
+                    <div class="bg-yellow-400 h-3 rounded-full transition-all duration-700" style="width: 75%"></div>
+                </div>
+            </div>
+
+            <div data-aos="fade-right" data-aos-delay="300">
+                <p class="text-sm font-semibold text-gray-800 mb-1">Figma</p>
+                <div class="w-full bg-gray-300 rounded-full h-3">
+                    <div class="bg-purple-400 h-3 rounded-full transition-all duration-700" style="width: 80%"></div>
+                </div>
+            </div>
+
+            <div data-aos="fade-right" data-aos-delay="400">
+                <p class="text-sm font-semibold text-gray-800 mb-1">Tailwind CSS</p>
+                <div class="w-full bg-gray-300 rounded-full h-3">
+                    <div class="bg-blue-400 h-3 rounded-full transition-all duration-700" style="width: 85%"></div>
+                </div>
+            </div>
+
+        <div data-aos="fade-right" data-aos-delay="500">
+            <p class="text-sm font-semibold text-gray-800 mb-1">Bootstrap</p>
+            <div class="w-full bg-gray-300 rounded-full h-3">
+                <div class="bg-indigo-400 h-3 rounded-full transition-all duration-700" style="width: 85%"></div>
+            </div>
+        </div>
+
+        <div data-aos="fade-right" data-aos-delay="600">
+            <p class="text-sm font-semibold text-gray-800 mb-1">Canva</p>
+            <div class="w-full bg-gray-300 rounded-full h-3">
+                <div class="bg-blue-400 h-3 rounded-full transition-all duration-700" style="width: 90%"></div>
+            </div>
+        </div>
+                </div>
+            </div>
+            
+</section>
+
+<section id="portofolio" class="bg-gradient-to-br from-[#FAD0C4] to-[#FF9A9E] py-12 px-4">
+  <h2 class="text-3xl font-bold text-center text-rose-800 mb-10">My Recent Work</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+    
+    <!-- Card -->
+    <div class="bg-rose-100 rounded-xl overflow-hidden shadow-md transition transform hover:scale-105 hover:shadow-xl duration-300">
+      <img src="foto/caffe.png" alt="Caffe" class="w-full h-40 object-cover">
+      <div class="p-4">
+        <h3 class="font-semibold text-lg">☕ Caffe</h3>
+        <p class="text-sm text-gray-600 mb-4">A cozy digital corner where every sip tells a story — perfect for coffee lovers and casual dreamers alike.</p>
+       <a href=" https://bbubble-0.github.io/caffe/" download class="inline-block bg-rose-400 hover:bg-rose-500 text-white text-sm py-1 px-4 rounded transition duration-300">
+          More
+        </a>
+
+    </div>
+    </div>
+
+    
+    <div class="bg-rose-100 rounded-xl overflow-hidden shadow-md transition transform hover:scale-105 hover:shadow-xl duration-300">
+      <img src="foto/islam.png" alt="Islam in Nusantara" class="w-full h-40 object-cover">
+      <div class="p-4">
+        <h3 class="font-semibold text-lg">📖 Islam in Nusantara</h3>
+        <p class="text-sm text-gray-600 mb-4">Explore the rich spiritual and cultural journey of Islam as it blossomed in the diverse lands of the Nusantara.</p>
+        <a href="https://github.com/bbubble-0/kolaborasi1.git" download class="inline-block bg-rose-400 hover:bg-rose-500 text-white text-sm py-1 px-4 rounded transition duration-300">
+          More
+        </a>
+      </div>
+    </div>
+
+    <div class="bg-rose-100 rounded-xl overflow-hidden shadow-md transition transform hover:scale-105 hover:shadow-xl duration-300">
+      <img src="foto/primeway.png" alt="PrimeWay" class="w-full h-40 object-cover">
+      <div class="p-4">
+        <h3 class="font-semibold text-lg">🌴 PrimeWay</h3>
+        <p class="text-sm text-gray-600 mb-4">Your smart companion for unforgettable journeys — discover new destinations, plan with ease, and travel the world your way.</p>
+        <a href="https://github.com/bbubble-0/primeway.git" download class="inline-block bg-rose-400 hover:bg-rose-500 text-white text-sm py-1 px-4 rounded transition duration-300">
+          More
+        </a>
+      </div>
+    </div>
+
+    <div class="bg-rose-100 rounded-xl overflow-hidden shadow-md transition transform hover:scale-105 hover:shadow-xl duration-300">
+      <img src="foto/attire.png" alt="ATTIRE" class="w-full h-40 object-cover">
+      <div class="p-4">
+        <h3 class="font-semibold text-lg">🛒 ATTIRE</h3>
+        <p class="text-sm text-gray-600 mb-4">A simple, stylish online store designed for everyday fashion — because looking good should be effortless.</p>
+        <a href="https://bbubble-0.github.io/e-commerce/" download class="inline-block bg-rose-400 hover:bg-rose-500 text-white text-sm py-1 px-4 rounded transition duration-300">
+          More
+        </a>
+      </div>
+    </div>
+
+    <div class="bg-rose-100 rounded-xl overflow-hidden shadow-md transition transform hover:scale-105 hover:shadow-xl duration-300">
+      <img src="foto/medicio.png" alt="MEDICIO" class="w-full h-40 object-cover">
+      <div class="p-4">
+        <h3 class="font-semibold text-lg">🏥 MEDICIO</h3>
+        <p class="text-sm text-gray-600 mb-4">A modern hospital website that connects care and technology — making healthcare more accessible, efficient, and human-centered.</p>
+       <a href="https://bbubble-0.github.io/klinik-3/" download class="inline-block bg-rose-400 hover:bg-rose-500 text-white text-sm py-1 px-4 rounded transition duration-300">
+          More
+        </a>
+      </div>
+    </div>
+
+    <div class="bg-rose-100 rounded-xl overflow-hidden shadow-md transition transform hover:scale-105 hover:shadow-xl duration-300">
+      <img src="foto/mooniki.png" alt="MOONIKI" class="w-full h-40 object-cover">
+      <div class="p-4">
+        <h3 class="font-semibold text-lg">🎫 MOONIKI</h3>
+        <p class="text-sm text-gray-600 mb-4">Get ready for an unforgettable night with NIKI — your exclusive gateway to live music, real vibes, and raw emotion.</p>
+        <a href="https://bbubble-0.github.io/konser/" download class="inline-block bg-rose-400 hover:bg-rose-500 text-white text-sm py-1 px-4 rounded transition duration-300">
+          More
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="bg-[#f8b5b5] py-12 px-4" id="contact">
+
+  <div class="max-w-6xl mx-auto text-center mb-10 animate-fade-up duration-1000">
+    <h2 class="text-3xl md:text-4xl font-bold text-[#802f34]">Let's Get in Touch</h2>
+    <p class="text-gray-700 mt-2">Feel free to contact me for any project or just to say hi!</p>
+  </div>
+
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-8 animate-fade-up duration-1000 delay-300">
+
+    <!-- KIRI: Info Kontak -->
+    <div class="flex flex-col gap-4 w-full md:w-1/2">
+      <div class="bg-[#ffe9d9] p-5 rounded-lg shadow-md flex items-center gap-4 hover:scale-105 transition duration-300">
+        <img src="foto/insta2-removebg-preview.png" class="w-8 h-8" alt="address">
+        <div>
+          <h4 class="font-semibold text-[#802f34]"><a href="https://www.instagram.com/mlkhaa.a?igsh=MWs5NDA4YzV0eG8zMA==">Instagram</a></h4>
+          <p><a href="https://www.instagram.com/mlkhaa.a?igsh=MWs5NDA4YzV0eG8zMA==">@mlkhaa.a</a></p>
+        </div>
+      </div>
+      <div class="bg-[#ffe9d9] p-5 rounded-lg shadow-md flex items-center gap-4 hover:scale-105 transition duration-300">
+        <img src="foto/telp-removebg-preview.png" class="w-9 h-9" alt="phone">
+        <div>
+          <h4 class="font-semibold text-[#802f34]">Contact Us</h4>
+          <p>+62 812 2912 7570</p>
+        </div>
+      </div>
+      <div class="bg-[#ffe9d9] p-5 rounded-lg shadow-md flex items-center gap-4 hover:scale-105 transition duration-300">
+        <img src="foto/email2-removebg-preview.png" class="w-9 h-9" alt="email">
+        <div>
+          <h4 class="font-semibold text-[#802f34]">Email us</h4>
+          <p>alfa.p24086@satamail.my.id</p>
+        </div>
+      </div>
+      <div class="bg-[#ffe9d9] p-5 rounded-lg shadow-md flex items-center gap-4 hover:scale-105 transition duration-300">
+        <img src="foto/tiktok2-removebg-preview.png" class="w-9 h-9" alt="hours">
+        <div>
+          <h4 class="font-semibold text-[#802f34]"><a href="https://www.tiktok.com/@maalikhah?_t=ZS-8wYWFtnsBZg&_r=1">Tiktok</a></h4>
+          <p><a href="https://www.tiktok.com/@maalikhah?_t=ZS-8wYWFtnsBZg&_r=1">@maalikhah</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- KANAN: Form -->
+    <div class="bg-[#fff1ea] p-6 rounded-lg shadow-md w-full md:w-1/2 animate-fade-left duration-1000 delay-500">
+      <h3 class="text-xl font-bold text-[#802f34] mb-4">Contact Form</h3>
+      <form class="space-y-4">
+        <div class="flex flex-col md:flex-row gap-4">
+          <input type="text" placeholder="Your Full Name" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300">
+          <input type="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300">
+        </div>
+        <input type="text" placeholder="Subject" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300">
+        <textarea rows="4" placeholder="Message..." class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300"></textarea>
+        <button type="submit" class="bg-[#ff7575] text-white px-6 py-3 rounded-lg hover:bg-[#f04b4b] transition duration-300">
+          <span class="inline-block mr-1">✉</span> Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+ </section>
+
+<footer class="bg-[#d67b7b] text-white py-10 px-6">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+    
+    <!-- Links -->
+    <div>
+      <h4 class="text-lg font-semibold mb-4">Links</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#home" class="hover:underline">&rsaquo; Home</a></li>
+        <li><a href="#about" class="hover:underline">&rsaquo; About</a></li>
+        <li><a href="#portofolio" class="hover:underline">&rsaquo; Portfolio</a></li>
+        <li><a href="#contact" class="hover:underline">&rsaquo; Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h4 class="text-lg font-semibold mb-4">Contact</h4>
+      <p class="text-sm leading-relaxed">
+        Dsn. Tegalsari, Ds. Kenteng, Kec. Susukan, Kab. Semarang, Jawa Tengah <br>
+        <a href="mailto:alfa.p24086@satamail.my.id" class="block mt-2 hover:underline">alfa.p24086@satamail.my.id</a>
+        <a href="tel:+6281228127570" class="block hover:underline">+62 812 2812 7570</a>
+      </p>
+    </div>
+
+    <!-- Follow -->
+    <div>
+      <h4 class="text-lg font-semibold mb-4">Follow</h4>
+      <div class="flex space-x-4 text-2xl">
+        <a href="https://www.instagram.com/mlkhaa.a?igsh=MWs5NDA4YzV0eG8zMA==">
+          <img src="foto/insta2-removebg-preview.png" alt="" class="w-15 h-10">
+        </a>
+        <a href="https://www.tiktok.com/@maalikhah?_t=ZS-8wYWFtnsBZg&_r=1">
+          <img src="foto/tiktok2-removebg-preview.png" alt="" class="w-15 h-10">
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
